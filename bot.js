@@ -140,5 +140,5 @@ if(message.content.toLowerCase() === "im doing good")
 
 });  
 
-Client.login("NDM3NzM3MDMwNTY3MzI5ODA1.Ddf3bA.G9gOis1zgGHqo6kwp4Rt9XvXubo");
+Client.login("");
   
