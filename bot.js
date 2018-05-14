@@ -140,5 +140,5 @@ if(message.content.toLowerCase() === "im doing good")
 
 });  
 
-Client.login("");
+Client.login(TOKEN);
   
