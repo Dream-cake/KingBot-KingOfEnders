@@ -1,14 +1,10 @@
-//const prefix = "?"
 const Discord = require("discord.js");
 const fs = require("fs");
-
-// const botsettings = require("./botsettings.json");
 
 const Client = new Discord.Client({disableEveryone: true});
 
 Client.commands = new Discord.Collection();
 
-// const token = botsettings.token;
 const prefixes = require("./prefixes.json");
 
 fs.readdir("./commands/", (err, files) => {
