@@ -8,7 +8,7 @@ const Client = new Discord.Client({disableEveryone: true});
 
 Client.commands = new Discord.Collection();
 
-const token = botsettings.token;
+// const token = botsettings.token;
 const prefixes = require("./prefixes.json");
 
 fs.readdir("./commands/", (err, files) => {
