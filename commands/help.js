@@ -26,7 +26,6 @@ if (!king){
     message.channel.send({embed: embed});
 }
 if (king === "music"){
-module.exports.run = async (bot, message, args) => {
     let icon = bot.user.displayAvatarURL;
 
     let embed = new Discord.RichEmbed()
