@@ -32,5 +32,5 @@ if (king === "8ball"){
 }
 
 module.exports.help = {
-  name:"help"
+  name:"help2"
 }
