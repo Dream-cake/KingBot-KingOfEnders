@@ -26,8 +26,7 @@ if (!king){
     message.channel.send({embed: embed});
 }
 if (king === "music"){
-    let icon = bot.user.displayAvatarURL;
-
+//     let icon = bot.user.displayAvatarURL;
     let embed = new Discord.RichEmbed()
         .setAuthor("Hello User These Are My Commands")
         .setDescription("**`help [Command] To Show You What It Does`**")
