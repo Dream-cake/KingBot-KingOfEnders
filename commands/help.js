@@ -27,13 +27,13 @@ if (!king){
 }
 if (king === "music"){
 module.exports.run = async (bot, message, args) => {
-    let bicon = bot.user.displayAvatarURL;
+    let icon = bot.user.displayAvatarURL;
 
     let embed = new Discord.RichEmbed()
         .setAuthor("Hello User These Are My Commands")
         .setDescription("**`help [Command] To Show You What It Does`**")
         .setColor("#008080")
-        .setThumbnail(bicon)
+        .setThumbnail(icon)
         // .setFooter(`Requested by: ${message.member.displayName}`, `${message.author.avatarURL}`)
         .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
         .setTimestamp(new Date())
