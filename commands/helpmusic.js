@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         .setDescription("**`help [Command] To Show You What It Does`**")
         .setColor("#008080")
         .setThumbnail(bicon)
-        .setFooter(`Requested by: ${message.member.displayName}`, `${message.author.avatarURL}`)
+//         .setFooter(`Requested by: ${message.member.displayName}`, `${message.author.avatarURL}`)
         .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
         .setTimestamp(new Date())
         .addField("Prefix", "**`?`**")
