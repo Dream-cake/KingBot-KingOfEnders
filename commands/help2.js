@@ -28,3 +28,9 @@ if (king === "8ball"){
         .addField("Example", "**`8ball` <-> `8ball Will I Have School Tomorrow?`**");
     message.channel.send({embed: embed})
 }
+
+}
+
+module.exports.help = {
+  name:"help"
+}
