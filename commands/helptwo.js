@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-  name:"help2"
+  name:"helpmusic"
 }
 
 // exports.run = async (client, msg, [cmd]) => {
