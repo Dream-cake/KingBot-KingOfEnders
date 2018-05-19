@@ -13,5 +13,11 @@ module.exports.run = async (bot, message, args) => {
         .setTimestamp(new Date())
         .addField("Prefix", "**`?`**")
         .addField("Music", "**`play` <-> `stop` <-> `skip` <-> `leave` <-> `queue` <-> `np` <-> `volume`**")
-        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders ◢ ◤#0143`**")
+        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders ◢ ◤#0143`**");
+    
     message.channel.send({embed: embed});
+}
+
+module.exports.help = {
+  name:"help"
+}
