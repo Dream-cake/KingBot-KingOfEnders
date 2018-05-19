@@ -14,7 +14,7 @@ if (!king){
         .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
         .setTimestamp(new Date())
         .addField("Prefix", "**`?`**")
-        .addField("Main", "**`invites` <-> `ping` <-> `links` <-> `news` <-> `discordbot` <-> `serverinfo` <-> `userinfo` <-> `botinfo` <-> `vc`**")
+        .addField("Main", "**`invites` <-> `ping` <-> `links` <-> `news` <-> `discordbot` <-> `serverinfo` <-> `userinfo` <-> `botinfo` <-> `vc` <-> `help2`**")
         .addField("BotOwner", "**`setinv` <-> `seton` <-> `setdnd` <-> `setidle` <-> `eval` <-> `restart` <-> `todoList`**")
         .addField("Staff", "**`mute` <-> `unmute` <-> `clear` <-> `kick` <-> `ban` <-> `tempmute` <-> `addrole` <-> `removerole` <-> `warn` <-> `warnings` <-> `say` <-> `setPrefix`**")
         .addField("Fun", "**`spam` <-> `nameSpam` <-> `hello` <-> `good` <-> `avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `killme` <-> `roll` <-> `coin` <-> `steve` <-> `meme`**")
