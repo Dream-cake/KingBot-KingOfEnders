@@ -1,3 +1,28 @@
+const Discord = require("discord.js");
+
+module.exports.run = async (bot, message, args) => {
+    let bicon = bot.user.displayAvatarURL;
+
+    let embed = new Discord.RichEmbed()
+        .setAuthor("Hello User These Are My Commands")
+        .setDescription("**`help [Command] To Show You What It Does`**")
+        .setColor("#008080")
+        .setThumbnail(bicon)
+        // .setFooter(`Requested by: ${message.member.displayName}`, `${message.author.avatarURL}`)
+        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
+        .setTimestamp(new Date())
+        .addField("Prefix", "**`?`**")
+        .addField("Music", "**`play` <-> `stop` <-> `skip` <-> `leave` <-> `` <-> `queue` <-> `np` <-> `volume`**")
+        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders ◢ ◤#0143`**")
+        .addField("Announcements", "**`New Looking Help Menu and Also Doesn't Send In Authors Messages (Pm/Dm It Means) \n\[+] setPrefix [+] New Help Menu [+] help [command]`**")
+    message.channel.send({embed: embed});
+
+}
+
+module.exports.help = {
+  name:"help2"
+}
+
 // exports.run = async (client, msg, [cmd]) => {
 //     const method = client.user.bot ? "author" : "channel";
 //     const help = this.buildHelp(client, msg);
@@ -104,29 +129,29 @@
 //     return false;
 // });
 
-const Discord = require("discord.js");
+// const Discord = require("discord.js");
 
-module.exports.run = async (bot, message, args) => {
-        if(message.author.id !== "412374698987487242") return message.channel.send("**Hey, `" + message.author.username + "` That Command Only Works With The BotOwner!**") 
-        message.channel.send({embed:{
-                color: 0x00ff15,
-                description: "" + message.author + " **Check Your Preivate Messages For More Commands**"
-            }
-        });
+// module.exports.run = async (bot, message, args) => {
+//         if(message.author.id !== "412374698987487242") return message.channel.send("**Hey, `" + message.author.username + "` That Command Only Works With The BotOwner!**") 
+//         message.channel.send({embed:{
+//                 color: 0x00ff15,
+//                 description: "" + message.author + " **Check Your Preivate Messages For More Commands**"
+//             }
+//         });
 
-        message.channel.send({embed:{
-            color: 0xffb600,
-            description: "" + message.author + " **Make Sure You Have Server Private Messages On `Click The` :arrow_down: `Then Go To Private Settings` To Turn Them On and Then You Can Get My Commands**"
-            }
-        });
-        message.author.send({embed:{
-            color: 0x0099ff,
-                title: "Bot Commands",
-                description: "**__Here Are My Commands__** \n\n**__Main__** \n\?invites - Advertises Stuff For People! \n\?ping - :ping_pong: Pong \n\?links - Gives You Helpful Links \n\?news - Gives You News On What's Happening With ChatBot \n\?discord - Invites You To The ChatBot SupportServer      \n\n**__Owner__** \n\?setinv - Sets Status To `Invisible` \n\?seton - Sets Status To `Online` \n\?setdnd - Sets Status To `Dnd` \n\?setidle - Sets Status To `Idle`      \n\n**__Admin__** \n\?mute - Mutes The Mentioned Member \n\?unmute - UnMutes The Mentioned Member \n\?clear - Clears The Chat \n\?kick - Kicks The Mentioned Member \n\?ban - Bans The Mentioned Member \n\?tempmute - TempMutes The Mentioned Member ?addrole - Add A Role To The Mentioned Member \n\?removerole - Removes A Role From A Mentioned Member \n\?warn - Warns The Mentioned Member \n\?warnings - Shows The Mentioned Members Warns \n\?say - When You Write A Message If Makes The Bot Say It      \n\n**__Fun__** \n\**More New Fun Commands Coming Soon!** \n\?spam - Spams Words and Only A Command For Spam Channels \n\?nameSpam - Spams Your Name and Only A Command For Spam Channels \n\?hello - Says Hello To You! \n\?good - Makes You Say `I'm Good and You?` and The Bot Says `I'm Doing Good!` \n\?avatar - Generates Your Avatar \n\?icon - Generates The Server Icon If It has One      \n\n**__Special Events__** \n\?songs - **April 20, 2018** Singer **Avicii**, Swedish Musician, Age **28** and Died In Oman. May He Rest In Peace. \n\n**__Announcements__** \n\ChatBot SupportServer Is Now Opened Join It Here Today! https://discord.gg/9DJNNRZ \n\New Commands Menu Coming Soon (Expected By May 5th - 15th)"
-            }
-        });
-}
+//         message.channel.send({embed:{
+//             color: 0xffb600,
+//             description: "" + message.author + " **Make Sure You Have Server Private Messages On `Click The` :arrow_down: `Then Go To Private Settings` To Turn Them On and Then You Can Get My Commands**"
+//             }
+//         });
+//         message.author.send({embed:{
+//             color: 0x0099ff,
+//                 title: "Bot Commands",
+//                 description: "**__Here Are My Commands__** \n\n**__Main__** \n\?invites - Advertises Stuff For People! \n\?ping - :ping_pong: Pong \n\?links - Gives You Helpful Links \n\?news - Gives You News On What's Happening With ChatBot \n\?discord - Invites You To The ChatBot SupportServer      \n\n**__Owner__** \n\?setinv - Sets Status To `Invisible` \n\?seton - Sets Status To `Online` \n\?setdnd - Sets Status To `Dnd` \n\?setidle - Sets Status To `Idle`      \n\n**__Admin__** \n\?mute - Mutes The Mentioned Member \n\?unmute - UnMutes The Mentioned Member \n\?clear - Clears The Chat \n\?kick - Kicks The Mentioned Member \n\?ban - Bans The Mentioned Member \n\?tempmute - TempMutes The Mentioned Member ?addrole - Add A Role To The Mentioned Member \n\?removerole - Removes A Role From A Mentioned Member \n\?warn - Warns The Mentioned Member \n\?warnings - Shows The Mentioned Members Warns \n\?say - When You Write A Message If Makes The Bot Say It      \n\n**__Fun__** \n\**More New Fun Commands Coming Soon!** \n\?spam - Spams Words and Only A Command For Spam Channels \n\?nameSpam - Spams Your Name and Only A Command For Spam Channels \n\?hello - Says Hello To You! \n\?good - Makes You Say `I'm Good and You?` and The Bot Says `I'm Doing Good!` \n\?avatar - Generates Your Avatar \n\?icon - Generates The Server Icon If It has One      \n\n**__Special Events__** \n\?songs - **April 20, 2018** Singer **Avicii**, Swedish Musician, Age **28** and Died In Oman. May He Rest In Peace. \n\n**__Announcements__** \n\ChatBot SupportServer Is Now Opened Join It Here Today! https://discord.gg/9DJNNRZ \n\New Commands Menu Coming Soon (Expected By May 5th - 15th)"
+//             }
+//         });
+// }
 
-module.exports.help = {
-  name:"helpbeta"
-}
+// module.exports.help = {
+//   name:"helpbeta"
+// }
