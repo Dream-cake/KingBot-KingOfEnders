@@ -26,23 +26,23 @@ fs.readdir("./commands/", (err, files) => {
   
 });
 
-Client.on("guildMemberAdd", async member => {
+// Client.on("guildMemberAdd", async member => {
   
 
-  let welcomechannel = member.guild.channels.find(`name`, "general");
-  welcomechannel.send(`Welcome ${member}!`);
-});
+//   let welcomechannel = member.guild.channels.find(`name`, "general");
+//   welcomechannel.send(`Welcome ${member}!`);
+// });
 
 
 
-Client.on("guildMemberRemove", async member => {
+// Client.on("guildMemberRemove", async member => {
   
 
 
-  let welcomechannel = member.guild.channels.find(`name`, "general");
-  welcomechannel.send(`Cya ${member}`);
+//   let welcomechannel = member.guild.channels.find(`name`, "general");
+//   welcomechannel.send(`Cya ${member}`);
 
-});
+// });
 
 
 
