@@ -1,19 +1,72 @@
 const Discord = require("discord.js");
 
-module.exports.run = async (Client, message, args) => {
-    let bicon = Client.user.displayAvatarURL;
-    let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
-    .setColor("#15f153")
-    .setThumbnail(bicon)
-    .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-    .addField("Bot Name", Client.user.username)
-    .addField("Created On", Client.user.createdAt)
-    .addField("Servers In", `${Client.user.username} Is Online On ${Client.guilds.size} Servers!`);
+exports.exec = async (Bastion, message, args) => {
+  try {
+    if (args.length < 1) {
+      /**
+      * The command was ran with invalid parameters.
+      * @fires commandUsage
+      */
+      return Bastion.emit('commandUsage', message, this.help);
+    }
 
-    message.channel.send(botembed);
-}
+    let guildModels = await Bastion.database.models.guild.findAll({
+      attributes: [ 'announcementChannel' ]
+    });
 
-module.exports.help = {
-  name:"botinfos"
-}
+    let announcementChannels = guildModels.filter(guildModel => guildModel.dataValues.announcementChannel).map(guildModel => guildModel.dataValues.announcementChannel);
+    let announcementMessage = args.join(' ');
+
+    for (let channel of announcementChannels) {
+      if (Bastion.shard) {
+        await Bastion.shard.broadcastEval(`
+          let channel = this.channels.get('${channel}');
+          if (channel) {
+            channel.send({
+              embed: {
+                color: this.colors.BLUE,
+                description: \`${announcementMessage}\`
+              }
+            }).catch(this.log.error);
+          }
+        `);
+      }
+      else {
+        await Bastion.channels.get(channel).send({
+          embed: {
+            color: Bastion.colors.BLUE,
+            description: announcementMessage
+          }
+        }).catch(() => {});
+      }
+    }
+
+    message.channel.send({
+      embed: {
+        color: Bastion.colors.GREEN,
+        title: 'Announced',
+        description: announcementMessage
+      }
+    }).catch(e => {
+      Bastion.log.error(e);
+    });
+  }
+  catch (e) {
+    Bastion.log.error(e);
+  }
+};
+
+exports.config = {
+  aliases: [ 'notify' ],
+  enabled: true,
+  ownerOnly: true
+};
+
+exports.help = {
+  name: 'announce',
+  botPermission: '',
+  userTextPermission: '',
+  userVoicePermission: '',
+  usage: 'announce <message>',
+  example: [ 'announce Just a random announcement.' ]
+};
