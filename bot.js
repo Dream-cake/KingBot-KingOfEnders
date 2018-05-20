@@ -42,7 +42,7 @@ Client.on("guildMemberRemove", async member => {
   let welcomechannel = member.guild.channels.find(`name`, "general");
   welcomechannel.send(`Cya ${member}`);
 
-})
+});
 
 
 
