@@ -3,8 +3,6 @@ exports.run = async (client, message, [args]) => {
     let response = ["Yes", "Maybe", "No", "Try again later", "Possibly", "Absolutely"];
 
     message.channel.send(`${response[~~(Math.random() * response.length)]}, ${message.member.displayName}.`);   
-    default:
-        message.channel.send("Invailed Command")
 };
 
 exports.conf = {
