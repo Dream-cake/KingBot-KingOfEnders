@@ -2,7 +2,8 @@ exports.run = async (client, message, [args]) => {
     // message.delete();
     let response = ["Yes", "Maybe", "No", "Try again later", "Possibly", "Absolutely"];
 
-    message.channel.send(`${response[~~(Math.random() * response.length)]}, ${message.member.displayName}.`);    
+    message.channel.send(`${response[~~(Math.random() * response.length)]}, ${message.member.displayName}.`);   
+        message.channel.send("Invailed Command")
 };
 
 exports.conf = {
