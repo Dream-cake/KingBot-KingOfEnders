@@ -21,7 +21,7 @@ if (!king){
         .addField("Special Events", "**`songs`**")
         .addField("Work-In Progress Commands", "**`warn` <-> `warnings` <-> `invites` <-> `discord` <-> `kick` <-> `ban`**")
         .addField("Commands Being Fixed", "**`roll` <-> `rps` <-> `killme` <-> `coin` <-> `8ball`**")
-        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders ◢ ◤#0143`**")
+        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders#0143`**")
         .addField("Announcements", "**`New Looking Help Menu and Also Doesn't Send In Authors Messages (Pm/Dm It Means) \n\[+] setPrefix [+] New Help Menu [+] help [command]`**")
     message.channel.send({embed: embed});
 }
@@ -37,7 +37,7 @@ if (king === "music"){
         .setTimestamp(new Date())
         .addField("Prefix", "**`?`**")
         .addField("Music", "**`play` <-> `stop` <-> `skip` <-> `leave` <-> `queue` <-> `np` <-> `volume`**")
-        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders ◢ ◤#0143`**")
+        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders#0143`**")
     message.channel.send({embed: embed});
 }
 if (king === "8ball"){
