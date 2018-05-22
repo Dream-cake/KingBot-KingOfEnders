@@ -14,7 +14,7 @@ if (!king){
         .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
         .setTimestamp(new Date())
         .addField("Prefix", "**`?`**")
-        .addField("Main", "**`invites` <-> `ping` <-> `links` <-> `news` <-> `discordbot` <-> `serverinfo` <-> `userinfo` <-> `botinfo` <-> `vc` <-> `help2`**")
+        .addField("Main", "**`invites` <-> `ping` <-> `links` <-> `news` <-> `discordbot` <-> `serverinfo` <-> `userinfo` <-> `botinfo` <-> `vc`**")
         .addField("BotOwner", "**`setinv` <-> `seton` <-> `setdnd` <-> `setidle` <-> `eval` <-> `restart` <-> `todoList`**")
         .addField("Staff", "**`mute` <-> `unmute` <-> `clear` <-> `kick` <-> `ban` <-> `tempmute` <-> `addrole` <-> `removerole` <-> `warn` <-> `warnings` <-> `say` <-> `setPrefix`**")
         .addField("Fun", "**`spam` <-> `nameSpam` <-> `hello` <-> `good` <-> `avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `killme` <-> `roll` <-> `coin` <-> `steve` <-> `meme`**")
@@ -23,21 +23,6 @@ if (!king){
         .addField("Commands Being Fixed", "**`roll` <-> `rps` <-> `killme` <-> `coin` <-> `8ball`**")
         .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders#0143`**")
         .addField("Announcements", "**`New Looking Help Menu and Also Doesn't Send In Authors Messages (Pm/Dm It Means) \n\[+] setPrefix [+] New Help Menu [+] help [command]`**")
-    message.channel.send({embed: embed});
-}
-if (king === "music"){
-//     let icon = bot.user.displayAvatarURL;
-    let embed = new Discord.RichEmbed()
-        .setAuthor("Hello User These Are My Commands")
-        .setDescription("**`help [Command] To Show You What It Does`**")
-        .setColor("#008080")
-//         .setThumbnail(icon)
-        // .setFooter(`Requested by: ${message.member.displayName}`, `${message.author.avatarURL}`)
-        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-        .setTimestamp(new Date())
-        .addField("Prefix", "**`?`**")
-        .addField("Music", "**`play` <-> `stop` <-> `skip` <-> `leave` <-> `queue` <-> `np` <-> `volume`**")
-        .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders#0143`**")
     message.channel.send({embed: embed});
 }
 if (king === "8ball"){
