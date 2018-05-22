@@ -379,6 +379,16 @@ if (king === "meme"){
     message.channel.send({embed: embed})
    
 }
+if (king === "announce"){
+    let embed = new Discord.RichEmbed()
+        // .setAuthor("")
+        .setColor("#008080")
+        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
+        .setTimestamp(new Date())
+        .addField("Example", "**`announce` <-> `announce [Message/Anything You Want The Message To Be]`**");
+    message.channel.send({embed: embed})
+   
+}
   
 }
 
