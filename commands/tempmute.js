@@ -5,8 +5,8 @@ module.exports.run = async (bot, message, args) => {
 
   //!tempmute @user 1s/m/h/d
   let tomute = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-  if(!tomute) return message.channel.send("**:warning: Hey, `" + message.member.displayName + "` You Need To `MENTION USER` Please Try Again :warning:**");
-  if(tomute.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**:warning: Hey, `" + message.member.displayName + "` You Can't TempMute A Member That Has A `Higher Role/Same` Role As You :warning:**");
+  if(!tomute) return message.channel.send("**Hey, `" + message.member.displayName + "` You Need To `MENTION USER` Please Try Again**");
+  if(tomute.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**Hey, `" + message.member.displayName + "` You Can't TempMute A Member That Has A `Higher Role/Same` Role As You**");
   let muterole = message.guild.roles.find(`name`, "CBMuted");
   //start of create role
   if(!muterole){
