@@ -6,7 +6,7 @@ const Client = new Discord.Client({disableEveryone: true});
 
 Client.commands = new Discord.Collection();
 
-const prefixes = require("./jsons/prefixes.json");
+const prefixes = require("./prefixes.json");
 
 const prefix = prefixes[message.guild.id].prefixes;
 
