@@ -8,7 +8,7 @@ Client.commands = new Discord.Collection();
 
 const prefixes = require("./prefixes.json");
 
-const prefix = prefixes[message.guild.id].prefixes;
+// const prefix = prefixes[message.guild.id].prefixes;
 
 fs.readdir("./staff/", (err, files) => {
 
