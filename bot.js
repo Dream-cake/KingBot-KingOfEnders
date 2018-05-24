@@ -144,6 +144,17 @@ function game4() {
     setTimeout(game1, 30000)
 }
 
+client.on('message', async message => { 
+	if (message.author.bot) return undefined;
+	if (message.content.startsWith("<prefix>") && message.channel.type !== "text")return mesage.reply("Please use my commands in a server");
+	
+	
+    if(!prefixes[message.guild.id]){
+    prefixes[message.guild.id] = {
+      prefixes: "<prefix>"
+    };
+  }
+
 Client.on('message', async message => { 
 
 if(!prefixes[message.guild.id]){
