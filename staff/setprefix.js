@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const prefixes = require("./prefixes.json");
+const prefixes = require("../prefixes.json");
 
 module.exports.run = async (client,message,args) => {
 const ars = message.content.split(" ").slice(1).join(" ");
