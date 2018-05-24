@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 var TOKEN = process.env.TOKEN;
+var PREFIX = '?';
 
 const Client = new Discord.Client({disableEveryone: true});
 
