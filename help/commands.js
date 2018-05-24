@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
         .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
         .setTimestamp(new Date())
         .addField("Original Prefix", "**`?`**")
-        .addField("Server Prefix", `**${prefix}**`)
+//         .addField("Server Prefix", `**${prefix}**`)
         .addField("Main", "**`invites` <-> `ping` <-> `links` <-> `news` <-> `discordbot` <-> `serverinfo` <-> `userinfo` <-> `botinfo` <-> `vc`**")
         .addField("BotOwner", "**`setinv` <-> `seton` <-> `setdnd` <-> `setidle` <-> `eval` <-> `restart` <-> `todoList`**")
         .addField("Staff", "**`mute` <-> `unmute` <-> `clear` <-> `tempmute` <-> `addrole` <-> `removerole` <-> `announce` <-> `say` <-> `setPrefix` <-> `setName`**")
