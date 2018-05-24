@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client,message,args) => {
 
-const token = botsettings.token;//gets the token from the botsettings file
+const token = botsettings.token;//gets the token from the botsettings fil
 
 if (message.author.id !== "412374698987487242")return;
 
