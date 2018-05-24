@@ -20,7 +20,7 @@ if (!king){
         .addField("Fun", "**`avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `killme` <-> `roll` <-> `coin` <-> `meme`**")
         .addField("Special Events", "**`songs`**")
         .addField("Commands Removed", "**`warn` <-> `warnings` <-> `steve` <-> `spam` <-> `kick` <-> `ban` <-> `nameSpam` <-> `hello` <-> `good` <-> `steve`**")
-        .addField("Work-In Progress Commands", "**`warn` <-> `warnings` <-> `invites` <-> `discord` <-> `kick` <-> `ban`**")
+        .addField("Work-In Progress Commands", "**`invites` <-> `discord`**")
         .addField("Commands Being Fixed", "**`roll` <-> `rps` <-> `killme` <-> `coin` <-> `8ball`**")
         .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders#0143`**")
         .addField("Announcements", "**`New Looking Help Menu and Also Doesn't Send In Authors Messages (Pm/Dm It Means) \n\Updated The Bot`**")
@@ -133,16 +133,7 @@ if (king === "invites"){
         .setTimestamp(new Date())
         .addField("Example", "**`invites` <-> `Sends You Invites To Friends Servers`**");
     message.channel.send({embed: embed})
-}
-if (king === "kick"){
-    let embed = new Discord.RichEmbed()
-        // .setAuthor("")
-        .setColor("#008080")
-        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-        .setTimestamp(new Date())
-        .addField("Example", "**`kick` <-> `kick @KingOfEnders Spamming/Annoying People`**");
-    message.channel.send({embed: embed})
-}  
+} 
 if (king === "killme"){
     let embed = new Discord.RichEmbed()
         // .setAuthor("")
@@ -170,15 +161,6 @@ if (king === "mute"){
         .addField("Example", "**`mute` <-> `mute @KingOfEnders Sending Links/Spamming Not Nice Videos`**");
     message.channel.send({embed: embed})
 }  
-if (king === "nameSpam"){
-    let embed = new Discord.RichEmbed()
-        // .setAuthor("")
-        .setColor("#008080")
-        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-        .setTimestamp(new Date())
-        .addField("Example", "**`nameSpam` <-> `Spams Your Name Like Crazy`**");
-    message.channel.send({embed: embed})
-}  
 if (king === "ping"){
     let embed = new Discord.RichEmbed()
         // .setAuthor("")
@@ -188,15 +170,6 @@ if (king === "ping"){
         .addField("Example", "**`ping` <-> `Pong With The MS`**");
     message.channel.send({embed: embed})
 }
-if (king === "randomUrban"){
-    let embed = new Discord.RichEmbed()
-        // .setAuthor("")
-        .setColor("#008080")
-        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-        .setTimestamp(new Date())
-        .addField("Example", "**`randomUrban` <-> `Shows You Random Urban`**");
-    message.channel.send({embed: embed})
-}  
 if (king === "removerole"){
     let embed = new Discord.RichEmbed()
         // .setAuthor("")
@@ -306,15 +279,6 @@ if (king === "songs"){
         .addField("Example", "**`songs` <-> `Shows 4 Songs Of Avicii The Singer That Died`**");
     message.channel.send({embed: embed})
 }  
-if (king === "spam"){
-    let embed = new Discord.RichEmbed()
-        // .setAuthor("")
-        .setColor("#008080")
-        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-        .setTimestamp(new Date())
-        .addField("Example", "**`spam` <-> `Spams Your Words Like Crazy`**");
-    message.channel.send({embed: embed})
-}  
 if (king === "tempmute"){
     let embed = new Discord.RichEmbed()
         // .setAuthor("")
@@ -350,26 +314,7 @@ if (king === "userinfo"){
         .setTimestamp(new Date())
         .addField("Example", "**`userinfo` <-> `Shows The Info Of The User`**");
     message.channel.send({embed: embed})
-}  
-if (king === "warn"){
-    let embed = new Discord.RichEmbed()
-        // .setAuthor("")
-        .setColor("#008080")
-        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-        .setTimestamp(new Date())
-        .addField("Example", "**`warn` <-> `warn @KingOfEnders Staff Disrespect`**");
-    message.channel.send({embed: embed})
-}  
-if (king === "warnings"){
-    let embed = new Discord.RichEmbed()
-        // .setAuthor("")
-        .setColor("#008080")
-        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
-        .setTimestamp(new Date())
-        .addField("Example", "**`warnings` <-> `warnings @KingOfEnders`**");
-    message.channel.send({embed: embed})
-   
-}
+}   
 if (king === "meme"){
     let embed = new Discord.RichEmbed()
         // .setAuthor("")
