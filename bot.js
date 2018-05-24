@@ -144,7 +144,7 @@ function game4() {
     setTimeout(game1, 30000)
 }
 
-client.on('message', async message => { 
+Client.on('message', async message => { 
 	if (message.author.bot) return undefined;
 	if (message.content.startsWith("<prefix>") && message.channel.type !== "text")return mesage.reply("Please use my commands in a server");
 	
@@ -155,13 +155,13 @@ client.on('message', async message => {
     };
   }
 
-Client.on('message', async message => { 
+// Client.on('message', async message => { 
 
-if(!prefixes[message.guild.id]){
-    prefixes[message.guild.id] = {
-      prefixes: "?"
-    };
-  }
+// if(!prefixes[message.guild.id]){
+//     prefixes[message.guild.id] = {
+//       prefixes: "?"
+//     };
+//   }
 
     if(message.author.bot) return;
     if(message.content.startsWith("?") && message.channel.type !== "text")return message.reply("Please use my commands in a server");
