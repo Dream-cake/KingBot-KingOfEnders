@@ -4,7 +4,7 @@ const fs = require("fs");
 module.exports.run = async (client,message,args) => {
   if (!args[0])return message.channel.send("please enter a new prefix");
 
-  const prefixes = require("../prefixes.json");
+  const prefixes = require("./prefixes.json");
 
   const prefix = prefixes[message.guild.id].prefixes;
 
