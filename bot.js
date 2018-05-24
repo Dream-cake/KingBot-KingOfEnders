@@ -7,7 +7,7 @@ const Client = new Discord.Client({disableEveryone: true});
 
 Client.commands = new Discord.Collection();
 
-const prefixes = require("./prefixes.json");
+const prefixes = require("../prefixes.json");
 
 fs.readdir("./staff/", (err, files) => {
 
