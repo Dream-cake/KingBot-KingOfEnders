@@ -1,13 +1,14 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 var TOKEN = process.env.TOKEN;
-// var PREFIX = '?';
 
 const Client = new Discord.Client({disableEveryone: true});
 
 Client.commands = new Discord.Collection();
 
-const prefixes = require("./prefixes.json");
+const prefixes = require("./jsons/prefixes.json");
+
+const prefix = prefixes[message.guild.id].prefixes;
 
 fs.readdir("./staff/", (err, files) => {
 
