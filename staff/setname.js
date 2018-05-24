@@ -1,7 +1,7 @@
 module.exports.run = async (client,message,args) => {
   // var OGNICK = message.guild.members.find("id", "412374698987487242");
   // if (message.member !== OGNICK)return message.channel.send("**:warning: Hey, `" + message.member.displayName + "` You Can't Set My NickName That's Only A `BotOwner` Command :warning:**");
-  if(!message.member.hasPermission("VIEW_AUDIT_LOG")) return message.channel.send("**:warning: Hey, `" + message.member.displayName + "` You Do Not Have Enough Perms To Mute or You Need `View Audit Log/Staff Team Role` :warning:**");
+  if(!message.member.hasPermission("VIEW_AUDIT_LOG")) return message.channel.send("**Hey, `" + message.member.displayName + "` You Do Not Have Enough Perms To Mute or You Need `View Audit Log/Staff Team Role`**");
 
 
     try {
