@@ -146,7 +146,7 @@ function game4() {
 
 Client.on('message', async message => { 
 	if (message.author.bot) return undefined;
-	if (message.content.startsWith("?") && message.channel.type !== "text")return mesage.reply("Please use my commands in a server");
+	if (message.content.startsWith("?") && message.channel.type !== "text")return message.reply("Please use my commands in a server");
 	
 	
     if(!prefixes[message.guild.id]){
