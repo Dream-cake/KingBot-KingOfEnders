@@ -8,7 +8,25 @@ Client.commands = new Discord.Collection();
 
 const prefixes = require("./prefixes.json");
 
-fs.readdir("./commands/", (err, files) => {
+// fs.readdir("./commands/", (err, files) => {
+
+//   if(err) console.log(err);
+
+//   let jsfile = files.filter(f => f.split(".").pop() === "js")
+//   if(jsfile.length <= 0){
+//     console.log("Couldn't find commands.");
+//     return;
+//   }
+
+//   jsfile.forEach((f, i) =>{
+//     let props = require(`./commands/${f}`);
+//     console.log(`${f} loaded!`);
+//     Client.commands.set(props.help.name, props);
+//   });
+ 
+// });
+
+fs.readdir("./staff/", (err, files) => {
 
   if(err) console.log(err);
 
@@ -19,84 +37,66 @@ fs.readdir("./commands/", (err, files) => {
   }
 
   jsfile.forEach((f, i) =>{
-    let props = require(`./commands/${f}`);
+    let props = require(`./staff/${f}`);
     console.log(`${f} loaded!`);
     Client.commands.set(props.help.name, props);
   });
  
 });
 
-// fs.readdir("./staff/", (err, files) => {
+fs.readdir("./fun/", (err, files) => {
 
-//   if(err) console.log(err);
+  if(err) console.log(err);
 
-//   let jsfile = files.filter(f => f.split(".").pop() === "js")
-//   if(jsfile.length <= 0){
-//     console.log("Couldn't find commands.");
-//     return;
-//   }
+  let jsfile = files.filter(f => f.split(".").pop() === "js")
+  if(jsfile.length <= 0){
+    console.log("Couldn't find commands.");
+    return;
+  }
 
-//   jsfile.forEach((f, i) =>{
-//     let props = require(`./staff/${f}`);
-//     console.log(`${f} loaded!`);
-//     Client.commands.set(props.help.name, props);
-//   });
+  jsfile.forEach((f, i) =>{
+    let props = require(`./fun/${f}`);
+    console.log(`${f} loaded!`);
+    Client.commands.set(props.help.name, props);
+  });
  
-// });
+});
 
-// fs.readdir("./fun/", (err, files) => {
+fs.readdir("./help/", (err, files) => {
 
-//   if(err) console.log(err);
+  if(err) console.log(err);
 
-//   let jsfile = files.filter(f => f.split(".").pop() === "js")
-//   if(jsfile.length <= 0){
-//     console.log("Couldn't find commands.");
-//     return;
-//   }
+  let jsfile = files.filter(f => f.split(".").pop() === "js")
+  if(jsfile.length <= 0){
+    console.log("Couldn't find commands.");
+    return;
+  }
 
-//   jsfile.forEach((f, i) =>{
-//     let props = require(`./fun/${f}`);
-//     console.log(`${f} loaded!`);
-//     Client.commands.set(props.help.name, props);
-//   });
+  jsfile.forEach((f, i) =>{
+    let props = require(`./help/${f}`);
+    console.log(`${f} loaded!`);
+    Client.commands.set(props.help.name, props);
+  });
  
-// });
+});
 
-// fs.readdir("./help/", (err, files) => {
+fs.readdir("./botowner/", (err, files) => {
 
-//   if(err) console.log(err);
+  if(err) console.log(err);
 
-//   let jsfile = files.filter(f => f.split(".").pop() === "js")
-//   if(jsfile.length <= 0){
-//     console.log("Couldn't find commands.");
-//     return;
-//   }
+  let jsfile = files.filter(f => f.split(".").pop() === "js")
+  if(jsfile.length <= 0){
+    console.log("Couldn't find commands.");
+    return;
+  }
 
-//   jsfile.forEach((f, i) =>{
-//     let props = require(`./help/${f}`);
-//     console.log(`${f} loaded!`);
-//     Client.commands.set(props.help.name, props);
-//   });
+  jsfile.forEach((f, i) =>{
+    let props = require(`./botowner/${f}`);
+    console.log(`${f} loaded!`);
+    Client.commands.set(props.help.name, props);
+  });
  
-// });
-
-// fs.readdir("./botowner/", (err, files) => {
-
-//   if(err) console.log(err);
-
-//   let jsfile = files.filter(f => f.split(".").pop() === "js")
-//   if(jsfile.length <= 0){
-//     console.log("Couldn't find commands.");
-//     return;
-//   }
-
-//   jsfile.forEach((f, i) =>{
-//     let props = require(`./botowner/${f}`);
-//     console.log(`${f} loaded!`);
-//     Client.commands.set(props.help.name, props);
-//   });
- 
-// });
+});
 
 // Client.on("guildMemberAdd", async member => {
   
