@@ -1,7 +1,7 @@
 exports.run = function(client, message) {
     message.channel.send(`**${message.member.displayName} Has Fell Out Of The Minecraft World.**`).then(Message => {
 //         setTimeout(() => { Message.edit("**Respawning...**"); }, 1000);
-        setTimeout(() => { Message.edit("https://www.anime-planet.com/users/Mullen"); }, 2000);
+        setTimeout(() => { Message.edit("https://www.anime-planet.com/users/Mullen"); }, 3000);
         setTimeout(() => { Message.edit(`**Respawned Complete. Welcome Back, ${message.member.displayName}. Hope You Don't Fall Out Of The Void Again**`); }, 3000);
     });
 };
