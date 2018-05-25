@@ -20,10 +20,10 @@ if (!king){
         .addField("Fun", "**`avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `killme` <-> `roll` <-> `coin` <-> `meme`**")
         .addField("Special Events", "**`songs`**")
         .addField("Commands Removed", "**`warn` <-> `warnings` <-> `steve` <-> `spam` <-> `kick` <-> `ban` <-> `nameSpam` <-> `hello` <-> `good` <-> `steve`**")
-        .addField("Work-In Progress Commands", "**`invites` <-> `discord`**")
-        .addField("Commands Being Fixed", "**`roll` <-> `rps` <-> `killme` <-> `coin` <-> `8ball`**")
+//         .addField("Work-In Progress Commands", "**`invites` <-> `discord`**")
+//         .addField("Commands Being Fixed", "**`roll` <-> `rps` <-> `killme` <-> `coin` <-> `8ball`**")
         .addField("Contact", "**`Bugs/Spelling Contact Owner KingOfEnders#0143`**")
-        .addField("Announcements", "**`New Looking Help Menu and Also Doesn't Send In Authors Messages (Pm/Dm It Means) \n\Updated The Bot`**")
+        .addField("Announcements", "**-> `New Looking Help Menu and Also Doesn't Send In Authors Messages (Pm/Dm It Means)` \n\-> `Updated The Bot`**")
     message.channel.send({embed: embed});
 }
 if (king === "8ball"){
