@@ -6,7 +6,7 @@ exports.run = (client, message, sides) => {
         var y = Math.floor(Math.random() * (Math.floor(sides) - Math.ceil(1) + 1)) + Math.ceil(1);
         return message.channel.send(`🎲 **You Rolled A ${y}** 🎲`);
     } else {
-        return message.channel.send("**:warning: Hey, `" + message.member.displayName + "` It Looks Like You Added Some `Letters` Into Your `Numbers` Please Try Again :warning:**");
+        return message.channel.send("**Hey, `" + message.member.displayName + "` It Looks Like You Added Some `Letters` Into Your `Numbers` Please Try Again**");
     }    
  };
 
