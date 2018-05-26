@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Main", "**`invites` <-> `ping` <-> `links` <-> `news` <-> `discordbot` <-> `serverinfo` <-> `userinfo` <-> `botinfo` <-> `vc`**")
         .addField("BotOwner", "**`setinv` <-> `seton` <-> `setdnd` <-> `setidle` <-> `eval` <-> `restart` <-> `todoList`**")
         .addField("Staff", "**`mute` <-> `unmute` <-> `clear` <-> `tempmute` <-> `addrole` <-> `removerole` <-> `announce` <-> `say` <-> `setPrefix` <-> `setName`**")
-        .addField("Fun", "**`avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `killme` <-> `roll` <-> `coin` <-> `meme`**")
+        .addField("Fun", "**`avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `mcfallout` <-> `roll` <-> `coin` <-> `meme`**")
         .addField("Special Events", "**`songs`**")
         .addField("Commands Removed", "**`warn` <-> `warnings` <-> `steve` <-> `spam` <-> `kick` <-> `ban` <-> `nameSpam` <-> `hello` <-> `good` <-> `steve`**")
 //         .addField("Work-In Progress Commands", "**`invites` <-> `discord`**")
