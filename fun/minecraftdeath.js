@@ -14,7 +14,7 @@ exports.conf = {
 };
       
 exports.help = {
-    name: "killme",
+    name: "mcfallout",
     description: "Kill yourself with this command. Now comes with free revival!",
     usage: "",
     usageDelim: "",
