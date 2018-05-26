@@ -17,7 +17,7 @@ if (!king){
         .addField("Main", "**`invites` <-> `ping` <-> `links` <-> `news` <-> `discordbot` <-> `serverinfo` <-> `userinfo` <-> `botinfo` <-> `vc`**")
         .addField("BotOwner", "**`setinv` <-> `seton` <-> `setdnd` <-> `setidle` <-> `eval` <-> `restart` <-> `todoList`**")
         .addField("Staff", "**`mute` <-> `unmute` <-> `clear` <-> `tempmute` <-> `addrole` <-> `removerole` <-> `announce` <-> `say` <-> `setPrefix` <-> `setName`**")
-        .addField("Fun", "**`avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `killme` <-> `roll` <-> `coin` <-> `meme`**")
+        .addField("Fun", "**`avatar` <-> `icon` <-> `google` <-> `urban` <-> `randomUrban`<-> `rps` <-> `8ball` <-> `mcfallout` <-> `roll` <-> `coin` <-> `meme`**")
         .addField("Special Events", "**`songs`**")
 //         .addField("Commands Removed", "** **")
 //         .addField("Work-In Progress Commands", "** **")
@@ -134,13 +134,13 @@ if (king === "invites"){
         .addField("Example", "**`invites` <-> `Sends You Invites To Friends Servers`**");
     message.channel.send({embed: embed})
 } 
-if (king === "killme"){
+if (king === "mcfallout"){
     let embed = new Discord.RichEmbed()
         // .setAuthor("")
         .setColor("#008080")
         .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
         .setTimestamp(new Date())
-        .addField("Example", "**`killme` <-> `Kills YourSelf Then Respawns`**");
+        .addField("Example", "**`mcfallout` <-> `Falls out of the Minecraft World then Respawns as a new person`**");
     message.channel.send({embed: embed})
 }  
 if (king === "links"){
