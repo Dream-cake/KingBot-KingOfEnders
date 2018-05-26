@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require('./botconfig.json');
+const config = require('../botconfig.json');
 // const embeds = require('./embeds.json');
 
 exports.run = (client, message, args) => {
