@@ -22,7 +22,7 @@ const Discord = require("discord.js");
 
 exports.run = async (client, message) => {
     const msg = await message.channel.send("Pinging...");
-    await msg.edit(`:GlitchedRealms:`);
+    await msg.edit(`<:GlitchedRealms:414607067144519680>`);
 };
   
 exports.conf = {
