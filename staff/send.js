@@ -8,7 +8,7 @@ if (mention == null) { return; }
   message.delete();
   mentionMessage = message.content.slice (8);
   mention.send (mentionMessage);
-  message.channel.send ("Hey, `" + message.member.displayName + "` I Send The Message To Those People You Mentioned");
+  message.channel.send ("**Hey, `" + message.member.displayName + "` I Send The Message To Those People You Mentioned**");
 }
 
 module.exports.help = {
