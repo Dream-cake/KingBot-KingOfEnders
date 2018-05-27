@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
 mention = message.mentions.users.first();
 if (mention == null) { return; }	
   message.delete();
-//   mentionMessage = message.content.slice (8);
+  mentionMessage = message.content.slice (8);
   mention.send (mentionMessage);
   message.channel.send ("**Hey, `" + message.member.displayName + "` I Send The Message To Those People You Mentioned**");
 }
