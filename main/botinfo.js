@@ -9,7 +9,7 @@ module.exports.run = async (Client, message, args) => {
     .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
     .addField("Bot Name", Client.user.username)
     .addField("Created On", Client.user.createdAt)
-    .addField("Servers In", `${Client.user.username} Is Online On ${Client.guilds.size} Servers!`);
+    .addInline("Servers In", `${Client.user.username} Is Online On ${Client.guilds.size} Servers!`);
 
     message.channel.send(botembed);
 }
