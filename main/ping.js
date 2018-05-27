@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 exports.run = async (client, message) => {
     const msg = await message.channel.send("Pinging...");
-    await msg.edit(`🎉 Pong! (Took: ${msg.createdTimestamp - message.createdTimestamp}ms.) 🎉 <:GWcodezGopher:405043383174823966>`);
+    await msg.edit(`🎉 Pong! (Took: ${msg.createdTimestamp - message.createdTimestamp}ms.) 🎉`);
 };
   
 exports.conf = {
