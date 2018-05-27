@@ -10,7 +10,6 @@ module.exports.run = async (bot, message, args) => {
         .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
         .addField("Full Username", message.author.tag)
         .addField("ID", message.author.id)
-        .addField("Test", ":GlitchedRealms:")
         .addField("Account Created", message.author.createdAt)
         .addField("Kickable", message.member.kickable)
         .addField("Bannable", message.member.bannable)
