@@ -11,7 +11,6 @@ module.exports.run = async (bot, message, args) => {
     .addField("Created On", message.guild.createdAt)
     .addField("You Joined", message.member.joinedAt)
     .addField("Total Members", message.guild.memberCount)
-    inline: true
     .addField("Humans", message.guild.memberCount - message.guild.members.filter(m => m.user.bot).size)
     .addField("Bots", message.guild.members.filter(m => m.user.bot).size)
     .addField("Roles", message.guild.roles.size)
