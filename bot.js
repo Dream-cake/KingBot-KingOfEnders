@@ -173,15 +173,6 @@ Client.on('message', async message => {
     };
   }
 	
-mention = message.mentions.users.first();
-
-if (message.startsWith (prefix + "send")) {
-if (mention == null) { return; }	
-  message.delete();
-  mentionMessage = message.content.slice (8);
-  mention.sendMessage (mentionMessage);
-  message.channel.send ("Done");
-}
 // Client.on('message', async message => { 
 
 // if(!prefixes[message.guild.id]){
