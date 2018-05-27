@@ -14,7 +14,6 @@ module.exports.run = async (bot, message, args) => {
         .addField("Kickable", message.member.kickable)
         .addField("Bannable", message.member.bannable)
         .addField("Hex Color", message.member.displayHexColor);
-    inline: true;
       
     message.channel.send({embed: embed});
 }
