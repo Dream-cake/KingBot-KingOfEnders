@@ -7,6 +7,7 @@ mention = message.mentions.users.first();
   mentionMessage = message.content.slice (8);
   mention.sendMessage (mentionMessage);
   message.channel.send ("Done");
+}
 
 module.exports.help = {
   name: "send"
