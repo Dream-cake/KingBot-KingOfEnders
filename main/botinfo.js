@@ -3,7 +3,6 @@ const Discord = require("discord.js");
 module.exports.run = async (Client, message, args) => {
     let bicon = Client.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
-    inline: true
     .setDescription("Bot Information")
     .setColor("#15f153")
     .setThumbnail(bicon)
