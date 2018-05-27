@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
       if(message.author.id !== "412374698987487242") return message.channel.send("**Hey, `" + message.member.displayName + "` That Command Is Only For The BotOwner *For Now Coming Out Soon For Staff* :wink:**")
 
-const sayMessage = args.join("** You Have Just Gotten A Message | **");
+const sayMessage = args.join(` **You Have Just Gotten A Message \n\From: member.guild.name | **`);
       message.delete();
    if(!message.member.hasPermission("READ_MESSAGES")) return;
      let USERM = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
