@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (Client, message, args) => {
     let bicon = Client.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
+    inline: true
     .setDescription("Bot Information")
     .setColor("#15f153")
     .setThumbnail(bicon)
@@ -10,7 +11,6 @@ module.exports.run = async (Client, message, args) => {
     .addField("Bot Name", Client.user.username)
     .addField("Created On", Client.user.createdAt)
     .addField("Servers In", `${Client.user.username} Is Online On ${Client.guilds.size} Servers!`);
-    inline: true;
 
     message.channel.send(botembed);
 }
