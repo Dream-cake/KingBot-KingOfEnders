@@ -345,6 +345,26 @@ if (king === "setName"){
     message.channel.send({embed: embed})
    
 }
+if (king === "vc"){
+    let embed = new Discord.RichEmbed()
+        // .setAuthor("")
+        .setColor("#008080")
+        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
+        .setTimestamp(new Date())
+        .addField("Example", "**`vc` <-> `Shows You Infomation About If Your Muted/Deafen Etc**");
+    message.channel.send({embed: embed})
+   
+}
+if (king === "botinfo"){
+    let embed = new Discord.RichEmbed()
+        // .setAuthor("")
+        .setColor("#008080")
+        .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
+        .setTimestamp(new Date())
+        .addField("Example", "**`botinfo` <-> `Shows The Info Of The Bot`**");
+    message.channel.send({embed: embed})
+   
+}
   
 }
 
