@@ -7,12 +7,12 @@ module.exports.run = async (bot, message, args) => {
   let tomute = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
   if(!tomute) return message.channel.send("**Hey, `" + message.member.displayName + "` You Need To `MENTION USER` Please Try Again**");
   if(tomute.hasPermission("MANAGE_MESSAGES")) return message.channel.send("**Hey, `" + message.member.displayName + "` You Can't TempMute A Member That Has A `Higher Role/Same` Role As You**");
-  let muterole = message.guild.roles.find(`name`, "CBMuted");
+  let muterole = message.guild.roles.find(`name`, "KBMuted");
   //start of create role
   if(!muterole){
     try{
       muterole = await message.guild.createRole({
-        name: "CBMuted",
+        name: "KBMuted",
         color: "#000000",
         permissions:[]
       })
