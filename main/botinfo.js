@@ -11,7 +11,7 @@ module.exports.run = async (Client, message, args) => {
     .addField("Servers In", `${Client.guilds.size} Servers!`)
     .addField("Channels Loaded", `${Client.channels.size} Channels`)
     .addField("Users Loaded", `${Client.users.size} Users`)
-    .addField("Created On", Client.user.createdAt)    
+    .addField("Created On", Client.user.createdAt);    
 
 }
 
