@@ -6,9 +6,9 @@ module.exports.run = async (bot, message, args) => {
 const sayMessage = args.join(` **You Have Just Gotten A Message | **`);
       message.delete();
    if(!message.member.hasPermission("READ_MESSAGES")) return;
-     let USERM = message.guild.member(message.mentions.users.first() || message.member.displayName(args[0]));
+     let USERM = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
      USERM.send(sayMessage);
-     message.channel.send ("**Hey, `" + message.member.displayName + "` I Send The Message To The Person You Mentioned**");
+     message.channel.send ("**Hey, `" + message.member.displayName + "` I Sent The Message To The Person You Mentioned**");
 }
 // mention = message.mentions.users.first();
 // if (mention == null) { return; }	
