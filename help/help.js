@@ -7,7 +7,7 @@ const king = message.content.split(" ").slice(1).join(" ");
 if (!king){
     let embed = new Discord.RichEmbed()
         .setAuthor("Hello User These Are My Commands")
-        .setDescription("**`help [Command] To Show You What It Does :KBLoading:`**")
+        .setDescription("**`help [Command] To Show You What It Does`** :KBLoading:")
         .setColor("#008080")
         .setThumbnail(bicon)
         // .setFooter(`Requested by: ${message.member.displayName}`, `${message.author.avatarURL}`)
