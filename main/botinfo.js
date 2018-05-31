@@ -21,7 +21,8 @@ module.exports.run = async (Client, message, args) => {
     .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members | Made By KingOfEnders`, `${message.guild.iconURL}`)
     .addField("Bot Name", Client.user.username)
     .addField("Servers In", `${Client.guilds.size} Servers!`)
-    .addField('Bot Uptime', `${parsetime(Client.uptime)}`)
+    .addField("Bot Uptime", `${parsetime(Client.uptime)}`)
+    .addField("Users Loaded", `${Client.users.size}`)
     .addField("Channels Loaded", `${Client.channels.size} Channels`)
     .addField("Users Loaded", `${Client.users.size} Users`)  
     .addField("Created On", Client.user.createdAt);
