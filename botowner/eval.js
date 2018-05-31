@@ -23,7 +23,7 @@ const clean = text => {
 
     let embed = new Discord.RichEmbed()
     .addField(`Input`, code, true)
-    .addField(`Output`, "`\`\`\${evaled}`\`\`\`",)
+    .addField(`Output`, "`\`\`${evaled}`\`\`\`",)
     .setColor("#1227AB")
     .setFooter(`${message.guild.name} | ${message.guild.memberCount} Members`, `${message.guild.iconURL}`)
     .setTimestamp(new Date());
