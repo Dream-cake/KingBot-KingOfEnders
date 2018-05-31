@@ -12,7 +12,7 @@ const parseime = function(milliseconds) {
       +(minutes?(written=true,minutes+" minutes"):"")+(written?", ":"")
       +(seconds?(written=true,seconds+" seconds"):"")+(written?" ":"");
 };
-parsetime(758678567856785678)
+// parsetime(758678567856785678)
 
 module.exports.run = async (Client, message, args) => {
     let bicon = Client.user.displayAvatarURL;
