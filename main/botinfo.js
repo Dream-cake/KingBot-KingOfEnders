@@ -5,8 +5,8 @@ const parsetime = function(seconds) {
     var hours = Math.floor(hours/24); hours %= 24;
     var days = Math.floor(days/365); hours %= 24;
     var written = false;
-    return(years?(written=true,years+" years"):"")+(written?", ":"")
-      +(days?(written=true,days+" days"):"")+(written?", ":"")
+    return(days?(written=true,days+" days"):"")+(written?", ":"")
+//       +(days?(written=true,days+" days"):"")+(written?", ":"")
       +(hours?(written=true,hours+" hours"):"")+(written?", ":"")
       +(minutes?(written=true,minutes+" minutes"):"")+(written?", ":"")
       +(seconds?(written=true,seconds+" seconds"):"")+(written?" ":"");
