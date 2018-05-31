@@ -203,13 +203,6 @@ if(message.content == "<@437737030567329805>"){
             }
         });
 }
-  
-if (message.author.bot)return;  
-if(message.content.toLowerCase() === "hello")
-      message.channel.send("Hey, " + message.member.displayName + " How Are You Today?");
-  
-if(message.content.toLowerCase() === "im doing good")
-      message.channel.send("Test")
         
   if(!message.content.startsWith(prefix))return;
 
